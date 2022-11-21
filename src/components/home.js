@@ -9,7 +9,7 @@ const Home = () => {
 	// Redirect to login page if not loading and no user found
 	useEffect(() => {
 		if (user) {
-			console.log(user);
+			// console.log(user);
 		} else {
 			navigate('/login');
 		}
@@ -18,13 +18,15 @@ const Home = () => {
 	return (
 		<>
 			{user?.email && (
-				<div>
-					You're logged in with{' '}
-					<a href='https://web3auth.io' target='blank'>
-						Web3Auth
-					</a>
-					!
-				</div>
+				<>
+					<div>
+						You're logged in with{' '}
+						<a href='https://web3auth.io' target='blank'>
+							Web3Auth
+						</a>{' '}
+						{user.name}!
+					</div>
+				</>
 			)}
 			<style>{`
         a{
