@@ -58,12 +58,11 @@ const Header = () => {
           margin-left: auto;
         }
         .logout{
-          color: white;
-          background: #ff6961;
+          color: #ff6961;
           border: 1px solid #ff6961;
         }
         .logout:hover{
-          background: #FAA0A0;
+          background: #ff6961;
         }
       `}</style>
 		</header>
